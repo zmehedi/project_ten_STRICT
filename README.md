@@ -1,0 +1,1 @@
+# project_ten_STRICT
