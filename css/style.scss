@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+$primaryColor:rgb(0,174,255);
+$secondaryColor: rgb(0,0,.617);
+
+%transition{
+    transition: all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+}
+.navbar{
+    background-color: #F6F9F9;
+    padding: 30px 0;
+    .bt:hover{
+        border-bottom: none;
+    }
+    a{
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #2d3950;
+        margin: 0 15px;
+        @extend %transition;
+        &:hover{
+            color:$primaryColor;
+            border-bottom: 1px solid $secondaryColor;
+            @extend %transition;
+        }
+        img{
+            height: 60px;
+        }
+    }
+}
+
+.banner{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.678);
+    background-blend-mode: color;
+    position: relative;
+    .click{
+        position: absolute;
+        color: #ffffff;
+        bottom: 20px;
+        left: 50%;
+        font-size: 30px;
+        transform: translateX(-50%);
+    }
+    .row{
+        min-height: 80vh;
+        align-items: center;
+        justify-content: center;
+        color:#ffffff;
+        text-align: center;
+        h1{
+            font-size: 100px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        span{
+            height: 3px;
+            background-color:$primaryColor;
+            display: block;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #ffffff;
+            font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            border: 1px solid $primaryColor;
+            padding: 15px 40px;
+            text-transform: uppercase;
+            margin-top: 25px;
+            font-weight: 600;
+        }
+        .btn-custom:hover{
+            background-color: $primaryColor;
+            color: #ffffff;
+            @extend %transition;
+        }
+
+    }
+}
+
+.about-section{
+    background-color: #F6F9F9;
+    padding: 40px 0;
+    text-align: center;
+    h1{
+        font-size: 40px;
+        margin-bottom: 15px;
+        color: #000000;
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 16px;
+        justify-content: center;
+    }
+}
+
+.service-section{
+    margin: 80px 0;
+    .icon{
+        background-color: rgb(0,174,255);
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        color: #ffffff;
+        font-size: 50px;
+        text-align: center;
+        margin: auto;
+    }
+    h3{
+        text-transform: capitalize;
+        color: black;
+        font-size: 28px;
+        font-weight: 600;
+        margin-top: 15px;
+        text-align: center;
+    }
+    p{
+        
+        font-size: 16px;
+        color: black;
+        text-align: center;
+
+    }
+}
+
+.footer-sec{
+    padding: 30px 0;
+    text-transform: capitalize;
+    p{
+        color: #ffffff;
+        font-size: 16px;
+        margin: 0;
+        a{
+            text-decoration: none;
+            color: rgb(0,174,255);
+            font-weight: 400;
+            
+        }
+        i{
+            color: rgb(0,174,255);
+        }
+        i:hover{
+                color: red;
+                @extend %transition;
+            }
+    }
+    background-color: #24292E;
+    ul{
+       
+        li{
+             margin: 0px 10px;
+            a{
+                color: #ffffff;
+                font-size: 18px;
+                height: 35px;
+                line-height: 35px;
+                width: 35px;
+                background-color: rgb(0,174,255);
+                display: block;
+                
+                text-align: center;
+                margin-left: 10px;
+                &:hover{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.gallary{
+
+    padding-bottom: 100px ;
+    .container{
+       position: relative; 
+       width: 100%;
+    }
+    .images{
+        margin:20px 5px;
+        a:hover{
+            opacity: .9;
+            color: rgb(0,174,255);
+        }
+    }
+  }
+  
+  
